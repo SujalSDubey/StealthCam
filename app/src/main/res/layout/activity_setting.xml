@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".Activities.SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/headLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifteen_dp"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/back"
+            app:tint="@color/white"></ImageView>
+
+        <TextView
+            android:id="@+id/txtTitleFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/abel"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyfour"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLay"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:background="@color/color_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/eight_dp"
+                app:cardElevation="@dimen/four_dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp">
+
+                <RadioGroup
+                    android:id="@+id/radioVideoPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioFrontVideo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:checked="true"
+                        android:fontFamily="@font/abel"
+                        android:text="Front Camera"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioBackVideo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:checked="false"
+                        android:fontFamily="@font/abel"
+                        android:text="Back Camera"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/fifteen_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:fontFamily="@font/abel"
+                android:maxLines="1"
+                android:padding="@dimen/four_dp"
+                android:text="Video Duration In Minutes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etVideoDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/abel"
+                android:hint="Duration In Minutes"
+                android:inputType="number"
+                android:padding="@dimen/eight_dp"
+                android:textColorHint="#1e1c11" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/photoLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLay"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:background="@color/color_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/eight_dp"
+                app:cardElevation="@dimen/four_dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp">
+
+                <RadioGroup
+                    android:id="@+id/radioCameraPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioFront"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:checked="true"
+                        android:fontFamily="@font/abel"
+                        android:text="Front Camera"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioBack"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:checked="false"
+                        android:fontFamily="@font/abel"
+                        android:text="Back Camera"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/eight_dp"
+                app:cardElevation="@dimen/four_dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioDuration"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:checked="true"
+                        android:fontFamily="@font/abel"
+                        android:text="Photo Duration"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioCount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:checked="false"
+                        android:fontFamily="@font/abel"
+                        android:text="Photo Count"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/fifteen_dp">
+
+            <TextView
+                android:id="@+id/titlePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:fontFamily="@font/abel"
+                android:maxLines="1"
+                android:padding="@dimen/four_dp"
+                android:text="Photo Duration In Minutes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/abel"
+                android:hint="Duration In Minutes"
+                android:inputType="number"
+                android:padding="@dimen/eight_dp"
+                android:textColorHint="#1e1c11" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/fifteen_dp"
+            android:paddingRight="@dimen/fifteen_dp"
+            android:paddingBottom="@dimen/fifteen_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:fontFamily="@font/abel"
+                android:maxLines="1"
+                android:padding="@dimen/four_dp"
+                android:text="Buffer Time In Second"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPhotoBuffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/abel"
+                android:hint="Duration In Second"
+                android:inputType="number"
+                android:padding="@dimen/eight_dp"
+                android:textColorHint="#1e1c11" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/abel"
+        android:text="Save Changes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+
+
+</RelativeLayout>

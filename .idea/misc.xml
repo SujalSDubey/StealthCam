@@ -1,0 +1,23 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/drawable/radio_background.xml" value="0.1075" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/layout/activity_setting.xml" value="0.22" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/layout/fragment_photo.xml" value="0.14130434782608695" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/layout/fragment_video.xml" value="0.14130434782608695" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/layout/photo_content.xml" value="0.14130434782608695" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/layout/video_content.xml" value="0.14130434782608695" />
+        <entry key="..\:/SourceCode/ALL_PROJECTS_ANDROID/SpyCamera/app/src/main/res/xml/provider_paths.xml" value="0.1" />
+        <entry key="..\:/SourceCode/Android Studio Projects/Projects/SpyCamera(Prashant  Kumar)/Project/app/src/main/res/layout/photo_content.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
